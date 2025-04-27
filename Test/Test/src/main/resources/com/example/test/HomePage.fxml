@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Region?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane prefHeight="650.0" prefWidth="950.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1">
+    <top>
+        <AnchorPane prefHeight="84.0" prefWidth="950.0" BorderPane.alignment="CENTER">
+            <children>
+                <HBox prefHeight="82.0" prefWidth="944.0" style="-fx-padding: 20 30 20 30; -fx-background-color: white; -fx-background-radius: 25px; -fx-border-radius: 25px; -fx-border-color: #e0e0e0; -fx-border-width: 1px;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                    <children>
+
+                        <!-- Logo Section -->
+                        <HBox alignment="CENTER_LEFT" spacing="10.0">
+                            <children>
+                                <FontAwesomeIconView fill="#008cff" glyphName="BANK" size="24" />
+                                <Label text="BMA" textFill="#008cff">
+                                    <font>
+                                        <Font name="System Bold" size="28.0" />
+                                    </font>
+                                </Label>
+                            </children>
+                        </HBox>
+
+                        <!-- Spacer Region -->
+                        <Region HBox.hgrow="ALWAYS" />
+
+                        <!-- Navigation Links -->
+                        <HBox alignment="CENTER" spacing="40.0">
+                            <children>
+                                <Label alignment="CENTER" prefHeight="36.0" prefWidth="61.0" styleClass="label-link" text="About" textFill="#008cff">
+                                    <font><Font name="System Bold" size="14.0" /></font>
+                                </Label>
+                                <Label alignment="CENTER" prefHeight="34.0" prefWidth="67.0" styleClass="label-link" text="Contact" textFill="#008cff">
+                                    <font><Font name="System Bold" size="14.0" /></font>
+                                </Label>
+                                <Label alignment="CENTER" prefHeight="31.0" prefWidth="70.0" styleClass="label-link" text="Blog" textFill="#008cff">
+                                    <font><Font name="System Bold" size="14.0" /></font>
+                                </Label>
+                            </children>
+                        </HBox>
+
+                        <!-- Spacer Region -->
+                        <Region HBox.hgrow="ALWAYS" />
+
+                        <!-- Sign Up and Login -->
+                        <HBox alignment="CENTER" spacing="10.0">
+                            <children>
+                                <Label alignment="CENTER" prefHeight="34.0" prefWidth="60.0" styleClass="label-link" text="Sign Up" textFill="#008cff">
+                                    <font><Font name="System Bold" size="12.0" /></font>
+                                </Label>
+                                <Button mnemonicParsing="false" prefHeight="38.0" prefWidth="94.0" style="-fx-border-radius: 50px; -fx-background-radius: 50px; -fx-background-color: #008cff;" styleClass="button-main" text="Login" textFill="WHITE">
+                                    <font><Font name="System Bold" size="14.0" /></font>
+                                </Button>
+                            </children>
+                        </HBox>
+                    </children>
+                </HBox>
+            </children>
+            <BorderPane.margin>
+                <Insets top="17.0" />
+            </BorderPane.margin>
+        </AnchorPane>
+    </top>
+
+    <center>
+        <AnchorPane BorderPane.alignment="CENTER">
+            <children>
+
+                <!-- Fullscreen Background Image -->
+                <ImageView pickOnBounds="true" preserveRatio="false" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+
+                </ImageView>
+
+                <!-- Dark overlay for contrast -->
+                <Rectangle fill="#00000066" strokeWidth="0.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+
+                <!-- Text Content -->
+                <VBox layoutX="74.0" layoutY="52.0" maxWidth="450.0" prefWidth="422.0" spacing="10.0" style="-fx-background-color: white; -fx-border-radius: 20px; -fx-background-radius: 20px; -fx-border-width: 1px;" AnchorPane.leftAnchor="74.0" AnchorPane.topAnchor="52.0">
+                    <children>
+                        <Label text="Welcome to ">
+                            <font><Font name="System Bold" size="30.0" /></font>
+                            <textFill>#008cff</textFill>
+                        </Label>
+                        <Label text="YourBank Careers!">
+                            <font><Font name="System Bold" size="30.0" /></font>
+                            <textFill>#008cff</textFill>
+                        </Label>
+                        <Label prefHeight="150.0" prefWidth="374.0" text="Join our team and embark on a rewarding journey in the banking industry. At YourBank, we are committed to fostering a culture of excellence and providing opportunities for professional growth. With a focus on innovation, customer service, and integrity, we strive to make a positive impact." wrapText="true">
+                            <font><Font name="System" size="15.0" /></font>
+                            <textFill>#008cff</textFill>
+                            <padding>
+                                <Insets left="5.0" />
+                            </padding>
+                        </Label>
+                    </children>
+                    <padding>
+                        <Insets left="10.0" top="10.0" />
+                    </padding>
+                </VBox>
+
+            </children>
+        </AnchorPane>
+    </center>
+</BorderPane>

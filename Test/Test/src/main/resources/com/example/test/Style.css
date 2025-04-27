@@ -1,0 +1,34 @@
+/**/
+
+.menu-item:hover {
+    -fx-background-color: rgba(0, 187, 255, 0.1); /* لون أخضر فاتح شفاف */
+    -fx-background-radius: 25;
+}
+
+.menu-item Label {
+    -fx-text-fill: #000000;
+    -fx-font-weight: bold;
+}
+
+.menu-item:hover Label {
+    -fx-text-fill: #008cff;
+}
+
+
+.menu-item:hover FontAwesomeIconView {
+    -fx-fill: #008cff;
+}
+.label-link:hover {
+    -fx-background-color: rgba(0, 187, 255, 0.1); /* لون أخضر فاتح شفاف */
+    -fx-background-radius: 25;
+    -fx-underline: true;    /* خط تحت النص */
+    -fx-cursor: hand;       /* شكل اليد عند المرور */
+}
+
+.button-main:hover {
+    -fx-background-color: linear-gradient(to right, #0073e6, #0099cc);
+    -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.2), 8, 0.0, 0, 3);
+    -fx-scale-x: 1.03;
+    -fx-scale-y: 1.03;
+}
+
